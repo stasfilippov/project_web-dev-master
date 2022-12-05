@@ -1,15 +1,21 @@
 body
 	font-family: $default-font
-	font-size: 20px
+	font-size: $font-s
+	font-style: normal
+	font-weight: $font-w
+	min-height: 100vh
+	position: relative
 
 a
 	text-decoration: none
+	color: black
 
-.container
-	max-width: $content-width
+.container-1
+	max-width: $content-width-b
 	margin: 0 auto
-	padding: 0 15px
-.row
-	display: flex
-	flex-wrap: wrap
-//
+	width: 100%
+
+.container-2
+	max-width: $content-width-l
+	margin: 0 auto
+	width: 100%
