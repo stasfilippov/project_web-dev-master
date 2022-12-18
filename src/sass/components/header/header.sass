@@ -1,6 +1,6 @@
 header
 	position: relative
-	height: 625px
+	min-height: 625px
 	background: #D4EFF8
 	z-index: 0
 	&::before
@@ -42,12 +42,27 @@ header
 	.top-btn-box 
 		height: 36px
 		padding: 8px 16px
+		margin-right: 24px
 	.top-btn-img
 		margin-right: 4px
 	.top-btn-link
 		@include font (14px, 800, 140%)
 		color: $color-txt-btn
-	.burger 
+	.burger
+		padding: 10px 7px
+		display: flex
+		flex-direction: column
+		span
+			display: inline-block
+			width: 22px
+			height: 3px
+			background-color: #0036B0
+			margin-bottom: 3px
+			&:nth-child(2)
+				width: 19px
+			&:nth-child(3)
+				width: 16px
+				margin: 0
 
 	.banner 
 		z-index: 1
