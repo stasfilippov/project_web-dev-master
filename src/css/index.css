@@ -37,7 +37,7 @@ input {
   -webkit-appearance: none;
   border-radius: 0; }
 
-body .top-w {
+body .top-w, body .top-phone-w, body .banner-w {
   display: flex;
   align-items: center; }
 
@@ -49,6 +49,14 @@ body {
   font-weight: 500;
   min-height: 100vh;
   position: relative; }
+  body .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F6A219;
+    transition: 0.5s; }
+    body .btn:hover {
+      background-color: #e69714; }
 
 a {
   text-decoration: none;
@@ -64,6 +72,9 @@ a {
   margin: 0 auto;
   width: 100%; }
 
+body .header {
+  height: 625px;
+  background: #D4EFF8; }
 body .top {
   padding: 16px 0; }
 body .logo {
@@ -80,5 +91,29 @@ body .logo {
     font-weight: 500;
     line-height: 140%;
     /* @extend %extend-example */ }
+body .top-phone-w {
+  margin-right: 16px; }
+body .top-phone-img {
+  margin-right: 8px; }
+body .top-phone-info {
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 140%;
+  /* @extend %extend-example */ }
+body .top-call {
+  margin-right: 40px;
+  color: #0036B0; }
+body .top-btn-box {
+  height: 36px;
+  padding: 8px 16px;
+  margin-left: auto; }
+body .top-btn-img {
+  margin-right: 4px; }
+body .top-btn-link {
+  font-size: 14px;
+  font-weight: 800;
+  line-height: 140%;
+  /* @extend %extend-example */
+  color: white; }
 
 /*# sourceMappingURL=index.css.map */
