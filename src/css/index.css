@@ -37,7 +37,7 @@ input {
   -webkit-appearance: none;
   border-radius: 0; }
 
-body .top-w, body .top-phone-w, body .banner-w {
+header .top-w, header .top-phone-w, header .banner-w {
   display: flex;
   align-items: center; }
 
@@ -72,17 +72,14 @@ a {
   margin: 0 auto;
   width: 100%; }
 
-body .header {
-  height: 625px;
-  background: #D4EFF8; }
-body .top {
+header .top {
   padding: 16px 0; }
-body .logo {
+header .logo {
   width: 400px;
   display: flex; }
-  body .logo .logo-img {
+  header .logo .logo-img {
     margin-right: 14px; }
-  body .logo .logo-descr {
+  header .logo .logo-descr {
     margin-top: 11px;
     max-width: 278px;
     width: 100%;
@@ -91,29 +88,33 @@ body .logo {
     font-weight: 500;
     line-height: 140%;
     /* @extend %extend-example */ }
-body .top-phone-w {
+header .top-phone-w {
   margin-right: 16px; }
-body .top-phone-img {
+header .top-phone-img {
   margin-right: 8px; }
-body .top-phone-info {
+header .top-phone-info {
   font-size: 16px;
   font-weight: 800;
   line-height: 140%;
   /* @extend %extend-example */ }
-body .top-call {
+header .top-call {
   margin-right: 40px;
   color: #0036B0; }
-body .top-btn-box {
+header .top-btn-box {
   height: 36px;
   padding: 8px 16px;
   margin-left: auto; }
-body .top-btn-img {
+header .top-btn-img {
   margin-right: 4px; }
-body .top-btn-link {
+header .top-btn-link {
   font-size: 14px;
   font-weight: 800;
   line-height: 140%;
   /* @extend %extend-example */
   color: white; }
+
+body .header {
+  height: 625px;
+  background: #D4EFF8; }
 
 /*# sourceMappingURL=index.css.map */
