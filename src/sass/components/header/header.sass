@@ -1,11 +1,26 @@
 header
+	position: relative
+	height: 625px
+	background: #D4EFF8
+	z-index: 0
+	&::before
+		content: " "
+		position: absolute
+		display: block
+		height: 100%
+		width: 100%
+		background: url(../img/banner-bg.svg) no-repeat top center
+		z-index: -1
 	.top 
-		padding: 16px 0
+		padding-top: 16px 
+		z-index: 1
 	.top-w
 		@extend %align-v
+		justify-content: flex-end
 	.logo 
 		width: 400px
 		display: flex
+		margin-right: auto
 		.logo-img
 			margin-right: 14px
 		.logo-descr
@@ -27,7 +42,6 @@ header
 	.top-btn-box 
 		height: 36px
 		padding: 8px 16px
-		margin-left: auto
 	.top-btn-img
 		margin-right: 4px
 	.top-btn-link
@@ -36,15 +50,24 @@ header
 	.burger 
 
 	.banner 
-
+		z-index: 1
+		margin-top: -18px
 	.banner-w 
 		@extend %align-v
 	.banner-l 
-
-	.banner-title 
-
+		margin-right: -43px
+	.banner-title
+		margin-bottom: 16px
+		h1
+			@include font (39px, 800, 130%)
 	.banner-descr 
-
+		max-width: 510px
+		margin-bottom: 40px
 	.banner-btn 
-
+		height: 48px
+		background-color: #0036B0
+		color: $color-txt-btn
+		@include font (14px, 800, 140%)
+		&:hover
+			background-color: #002476
 	.banner-r 
