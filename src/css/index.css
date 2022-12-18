@@ -37,7 +37,7 @@ input {
   -webkit-appearance: none;
   border-radius: 0; }
 
-body .top-w {
+header .top-w, header .top-phone-w, header .banner-w {
   display: flex;
   align-items: center; }
 
@@ -49,6 +49,15 @@ body {
   font-weight: 500;
   min-height: 100vh;
   position: relative; }
+  body .btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F6A219;
+    transition: 0.5s;
+    padding: 0 24px; }
+    body .btn:hover {
+      background-color: #e69714; }
 
 a {
   text-decoration: none;
@@ -64,21 +73,86 @@ a {
   margin: 0 auto;
   width: 100%; }
 
-body .top {
-  padding: 16px 0; }
-body .logo {
-  width: 400px;
-  display: flex; }
-  body .logo .logo-img {
-    margin-right: 14px; }
-  body .logo .logo-descr {
-    margin-top: 11px;
-    max-width: 278px;
-    width: 100%;
+header {
+  position: relative;
+  height: 625px;
+  background: #D4EFF8;
+  z-index: 0; }
+  header::before {
+    content: " ";
+    position: absolute;
     display: block;
-    font-size: 14px;
-    font-weight: 500;
+    height: 100%;
+    width: 100%;
+    background: url(../img/banner-bg.svg) no-repeat top center;
+    z-index: -1; }
+  header .top {
+    padding-top: 16px;
+    z-index: 1; }
+  header .top-w {
+    justify-content: flex-end; }
+  header .logo {
+    width: 400px;
+    display: flex;
+    margin-right: auto; }
+    header .logo .logo-img {
+      margin-right: 14px; }
+    header .logo .logo-descr {
+      margin-top: 11px;
+      max-width: 278px;
+      width: 100%;
+      display: block;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 140%;
+      /* @extend %extend-example */ }
+  header .top-phone-w {
+    margin-right: 16px; }
+  header .top-phone-img {
+    margin-right: 8px; }
+  header .top-phone-info {
+    font-size: 16px;
+    font-weight: 800;
     line-height: 140%;
     /* @extend %extend-example */ }
+  header .top-call {
+    margin-right: 40px;
+    color: #0036B0; }
+  header .top-btn-box {
+    height: 36px;
+    padding: 8px 16px; }
+  header .top-btn-img {
+    margin-right: 4px; }
+  header .top-btn-link {
+    font-size: 14px;
+    font-weight: 800;
+    line-height: 140%;
+    /* @extend %extend-example */
+    color: white; }
+  header .banner {
+    z-index: 1;
+    margin-top: -18px; }
+  header .banner-l {
+    margin-right: -43px; }
+  header .banner-title {
+    margin-bottom: 16px; }
+    header .banner-title h1 {
+      font-size: 39px;
+      font-weight: 800;
+      line-height: 130%;
+      /* @extend %extend-example */ }
+  header .banner-descr {
+    max-width: 510px;
+    margin-bottom: 40px; }
+  header .banner-btn {
+    height: 48px;
+    background-color: #0036B0;
+    color: white;
+    font-size: 14px;
+    font-weight: 800;
+    line-height: 140%;
+    /* @extend %extend-example */ }
+    header .banner-btn:hover {
+      background-color: #002476; }
 
 /*# sourceMappingURL=index.css.map */
